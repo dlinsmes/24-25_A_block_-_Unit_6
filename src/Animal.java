@@ -37,4 +37,27 @@ public class Animal {
     public String toString() {
         return name + " has " + energy + " energy";
     }
+
+    //the Java Object class defines equals() to return whether
+    //the param object is the same reference as "this" object with ==
+    //-override the equals() method so you define how two objects are considered
+    //equal
+    //-two Animal objects are equal if they have the
+    //same name and energy value
+
+    //-parameter type needs to be Object, as defined by
+    //the Java Object class
+    public boolean equals(Object o) {
+        //check if the param actual type is an Animal
+        if (o instanceof Animal) {
+            Animal other = (Animal) o;
+            //check if the other object's name and energy
+            //match this object's name and energy
+            if (other.name.equals(this.name) && other.energy == this.energy) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
+

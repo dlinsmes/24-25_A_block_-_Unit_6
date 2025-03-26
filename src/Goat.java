@@ -52,4 +52,18 @@ public class Goat extends Animal {
         //to refer to the parent class's version of the method
         return super.toString() + " and is a goat. horns = " + haveHorns;
     }
+
+    //two Goat objects are equal if they have the same name, energy, horns
+    public boolean equals(Object o) {
+        if (o instanceof Goat) {
+            Goat other = (Goat) o;
+            //since the Animal class equals() already checks name and energy,
+            //can access it by using super.equals()
+            if (super.equals(o) && other.haveHorns == this.haveHorns) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 }
