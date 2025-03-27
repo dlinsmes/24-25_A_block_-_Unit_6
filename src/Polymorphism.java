@@ -81,7 +81,7 @@ public class Polymorphism {
         System.out.println("a2 == a3: " + (a2 == a3));
         System.out.println("a3 == a4: " + (a3 == a4));
 
-        //== cannot be overriden, but the .equals() method can be overridden
+        //== cannot be overridden, but the .equals() method can be overridden
         System.out.println("a2.equals(a3): " + a2.equals(a3));
 
         //since the param type for .equals() is an object, any kind of
