@@ -16,7 +16,7 @@ public class Polymorphism {
 
         //once you're in a client class, you no longer have access
         //to a parent class's version of a method that has been
-        //overrriden
+        //overridden
         //-can't access the Animal version of sleep from g (Goat)
         //g.super.sleep()
 
