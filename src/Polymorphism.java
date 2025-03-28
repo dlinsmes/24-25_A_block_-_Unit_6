@@ -30,6 +30,12 @@ public class Polymorphism {
         //Goat is the actual type
         Animal b = new Goat("jiamu", true);
 
+        //polymorphism - an object can have multiple types
+        //due to an inheritance structore
+        //-due to method overriding, methods can have
+        //different behaviors
+
+
         //doesn't work the other way around
         //Goat c = new Animal("fdasfsa");
 
